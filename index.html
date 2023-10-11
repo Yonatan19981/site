@@ -26,6 +26,11 @@
         <input type="text" id="timeInput" placeholder="e.g. 9:00-17:00">
         <input type="date" id="dateInput">
         <button onclick="addShift()">Assign Shift</button>
+
+        <h2>Filter By Worker</h2>
+        <select id="filterWorkerSelect" onchange="populateScheduleTable()">
+            <option value="">All</option>
+        </select>
     </div>
 
     <h2>Schedule</h2>
@@ -34,8 +39,8 @@
             <th>Worker</th>
             <th>Date</th>
             <th>Shift Time</th>
+            <th>Action</th>
         </tr>
-        <!-- Shift rows will be populated here -->
     </table>
 
     <script src="script.js"></script>
